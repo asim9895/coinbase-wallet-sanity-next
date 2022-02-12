@@ -5,7 +5,7 @@ import Dashboard from './Dashboard';
 const Home = () => {
 	const { connectWallet, address } = useWeb3();
 	return (
-		<Wrapper>
+		<Wrapper style={{ backgroundColor: '#000000' }}>
 			{address ? (
 				<Dashboard address={address} />
 			) : (
@@ -29,6 +29,7 @@ const Wrapper = styled.div`
 	background-color: #000000;
 	display: grid;
 	place-items: center;
+	color: '#fff';
 `;
 
 const WalletConnect = styled.div`
